@@ -38,4 +38,8 @@ for i=1:size(C,1)
     end
 end
 disp(C)
-
+%jednodusi to na timhle
+%C=[2,-2,-2;2,2,2;-2,2,2];
+%C(C>=0)=1;
+%C(C<0)=rand(size(C(C<0),1),1);
+%disp(C)
