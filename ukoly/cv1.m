@@ -7,7 +7,7 @@ b=1:0.2:10;
 %3
 A= ones(3);
 B= zeros(size(A));
-D= ones(size(A));
+D= eye(size(A));
 %4
 M=[A,B,D];
 %5
