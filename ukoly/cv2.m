@@ -16,14 +16,14 @@ size(C)
 % end
 % S = S/tmp;
 
-S = sum(C,'all')/numel(C);
+S = sum(C,'all')/numel(C)
 % for i =1:3
 %     S=S/size(C,i);
 % end
 %3
 C = squeeze(C(1,:,:));
 %C=[1,2,3;1,2,3;2,2,3];
-C=C-(sum(C,2)/size(C,1));
+C=C-(sum(C,2)/size(C,1))
 %4
 x=(0:0.01:2*pi);
-la(x);
+la(x)
