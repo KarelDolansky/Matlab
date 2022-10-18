@@ -1,3 +1,3 @@
-function ave = la(x)
- ave = (sin(x).^2).*(cos(x));
+function y = la(x)
+    y = (sin(x).^2).*(cos(x));
 end
