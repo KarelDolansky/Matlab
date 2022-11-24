@@ -8,17 +8,17 @@ syms x;
 limit(f,x,Inf)
 limit(f,x,-Inf)
 limit(f,x,1,"right")
-limit(f,x,-1,"left")
+limit(f,x,1,"left")
 
 limit(g,x,Inf)
 limit(g,x,-Inf)
 limit(g,x,1,"right")
-limit(g,x,-1,"left")
+limit(g,x,1,"left")
 
 limit(h,x,Inf)
 limit(h,x,-Inf)
 limit(h,x,1,"right")
-limit(h,x,-1,"left")
+limit(h,x,1,"left")
 
 
 x=[-10:0.01:(1-0.01),nan,1:00.1:10];
@@ -27,11 +27,10 @@ plot(x,f(x))
 x=-10:0.01:10;
 y=g(x);
 y(imag(y)~=0)=nan;
+saveas(gcf,'plot_1','epsc')
 figure(2);
 plot(x,y)
+saveas(gcf,'plot_2','epsc')
 figure(3);
 plot(x,h(x))
-
-saveas(1,plot_1,epsc);
-saveas(2,plot_2,epsc);
-saveas(3,plot_3,epsc);
+saveas(gcf,'plot_3','epsc')
